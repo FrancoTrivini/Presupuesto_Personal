@@ -1,0 +1,284 @@
+body{
+    background: url(../img/fondo.png), #7b4397;
+    background: url(../img/fondo.png), linear-gradient(to left, #7b4397, #dc2430);
+}
+.encabezado{
+    height: 45vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado h1{
+    width: fit-content;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 3em;
+    margin-top: 50px;
+}
+.encabezado__saldo{
+    color: white;
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+.encabezado__ingresos{
+    color: white;
+    font-size: 1.5em;
+    background-color: rgb(69, 167, 167);
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+} 
+.encabezado__ingresos div{
+    padding-top: 5px;
+    padding-right: 20px;
+}
+.encabezado__ingresoTitulo{
+    flex-grow: 2;
+    padding-left: 20px;
+    text-align: start;
+}
+.encabezado__ingresoValor{
+    margin-right: 5px;
+}
+/* EGRESOS ENCABEZADO */
+.encabezado__egresos{
+    color: white;
+    font-size: 1.5em;
+    background-color: rgb(175, 54, 54);
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.encabezado__egresos div{
+    
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.encabezado__egresoTitulo{
+    flex-grow: 2;
+    padding-left: 20px;
+    text-align: start;
+}
+.encabezado__egresoPorcentaje{
+    margin-top: 10px;
+    font-size: .55em;
+}
+.encabezado__egresoValor{
+    margin-right: 6px;
+}
+
+
+
+/* !FIN ENCABEZADO */
+
+/* !COMIENZO MAIN */
+
+.main{
+    margin-top: 20px;
+    width: 100%;
+    height: 10vh;
+    /* background-color: rgb(228, 231, 235); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main select{
+    margin-right: 10px;
+    height: 40px;
+    cursor: pointer;
+    width: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.main select:hover,.main select:focus{
+    border: 1px solid grey;
+}
+#descripcion{
+    margin-right: 10px;
+    height: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+#descripcion:focus{
+    cursor: initial;
+    border: 1px solid grey;
+}
+#descripcion:hover{
+    border: 1px solid grey;
+}
+#valor{
+    margin-right: 10px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+#valor:focus{
+    cursor: initial;
+}
+
+.main button{
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid rgb(69, 167, 167);
+    color:  rgb(69, 167, 167);
+    transition: color .3s, border .3s, background-color .3s;
+}
+.main button:hover{
+    color:  rgb(54, 202, 202);
+    border: 2px solid rgb(54, 202, 202);
+    background-color: rgb(56, 116, 116);
+}
+.main button:active{
+    color:  rgb(69, 167, 167);
+    border: 2px solid rgb(69, 167, 167);
+    background-color: rgb(46, 92, 92);
+}
+
+
+/* !FIN MAIN */
+
+/* !COMIENZO FOOTER */
+
+.footer{
+    margin-top: 40px;
+    height: 45vh;   
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.footer__ingresos h2 {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(69, 167, 167);
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10em;
+}
+
+.footer__descripcionesI{
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    background-color: white;
+}
+.footer__descripcionI{
+    text-align: start;
+    padding-left: 5px;
+    flex-grow: 2;
+}
+
+.footer__valorI{
+    text-align: end;
+    margin-right: 10px;
+    color: rgb(69, 167, 167);
+}
+
+.footer__porcentajeI{
+    text-align: end;
+    margin-right: 10px;
+    color: rgb(69, 167, 167);
+}
+.footer__eliminarI{
+    color: rgb(69, 167, 167);
+    outline: none;
+    border: 1px solid rgb(69, 167, 167);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color .3s, border .3s, background-color .3s;
+}
+.footer__eliminarI:hover{
+    color:  rgb(54, 202, 202);
+    border: 2px solid rgb(54, 202, 202);
+    background-color: rgb(56, 116, 116);
+}
+.footer__eliminarI:active{
+    color:  rgb(69, 167, 167);
+    border: 2px solid rgb(69, 167, 167);
+    background-color: rgb(46, 92, 92);
+}
+
+
+/* !FIN INGRESOS, COMIENZO EGRESO */
+
+
+.footer__egresos h2 {
+    color: white ;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(175, 54, 54);
+    border-radius: 10em
+}
+
+.footer__descripcionesE{
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    background-color: white;
+}
+.footer__descripcionE{
+    text-align: start;
+    flex-grow: 2;
+    padding-left: 5px;
+}
+
+.footer__valorE{
+    text-align: end;
+    margin-right: 10px;
+    color: rgb(175, 54, 54);
+}
+
+.footer__porcentajeE{
+    text-align: end;
+    margin-right: 10px;
+    color: rgb(175, 54, 54);
+}
+.footer__eliminarE{
+    color: rgb(175, 54, 54);
+    outline: none;
+    border: 1px solid rgb(175, 54, 54);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color .3s, border .3s, background-color .3s;
+}
+.footer__eliminarE:hover{
+    color:  rgb(238, 78, 78);
+    border: 2px solid rgb(238, 78, 78);
+    background-color: rgb(117, 43, 43);
+}
+.footer__eliminarE:active{
+    color:  rgb(238, 78, 78);
+    border: 2px solid rgb(238, 78, 78);
+    background-color: rgb(117, 43, 43);
+}

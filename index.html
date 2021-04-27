@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="utf-8"/>
+        <meta charset="iso-8559-1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, mininum-scale=1.0, maximum-scale=1.0"/>
+        <meta name="description" content="pagina web"/>
+        <meta name="keywords" content="web">
+        <meta name="author" content="Franco Trivini">
+        <meta name="copyright" content="nombre de empresa">
+
+        <!-- PROTOCOLO PARA COMPARTIR EN REDES SOCIALES
+        https://ogp.me -->
+        <meta property="og:title" content="titulo de la pagina o articulo" />
+        <meta property="og:type" content="tipo de archivo" />
+        <meta property="og:url" content="url de nuestra pagina" />
+        <meta property="og:image" content="imagen a compartir de muestra o portada" />
+
+
+
+        <!-- ICONO DE PESTAÑA https://www.favicon-generator.org  -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+
+        <title>Mis finanzas</title>
+
+        <!-- CONVERSOR DE IMAGENES A WEBP, SVG, ICO, ETC
+        https://imagen.online-convert.com/es/convertir-a-webp -->
+        <!-- ICONOS PARA LA PAGINA https://fontawesome.com  -->
+
+
+    </head>
+
+
+    <body>
+        <div>
+            <header class="encabezado">
+                <h1>Saldo disponible:</h1>
+                <p class="encabezado__saldo">$<span id="saldo">0</span></p>
+                <div class="encabezado__ingresos">
+                    <div class="encabezado__ingresoTitulo">
+                        <p>INGRESOS</p>
+                    </div>
+                    <div class="encabezado__ingresoValor">$<b id="saldoPositivo">0</b> 
+                    </div>
+                </div>
+                <div class="encabezado__egresos">
+                    <div class="encabezado__egresoTitulo">
+                        <p>EGRESOS</p>
+                    </div>
+                    <div class="encabezado__egresoValor">$-<b id="saldoNegativo">0</b> 
+                    </div>
+                    <!-- <div class="encabezado__egresoPorcentaje"><b id="porcentaje">0</b>%</div> -->
+                </div>
+            </header>
+        </div>  
+        
+        <main class="main">
+            <select id="select">
+                <option value='ingreso' selected>+</option>
+                <option value='egreso'>-</option>
+            </select>
+            <input id="descripcion" type="text" placeholder="Agregar Descripción">
+            <input id="valor" type="number" placeholder="Valor"> 
+            <button id="boton">✔</button>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__ingresos">
+                <h2>INGRESOS</h2>
+                <hr>
+                <div class="footer__descripcionesI">
+                    <div id="descripcionI" class="footer__descripcionI">
+                    </div>
+                    <div id="valorI" class="footer__valorI">
+                    </div>
+                    <div id="porcentajeI" class="footer__porcentajeI">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__egresos">
+                <h2>EGRESOS</h2>
+                <hr>
+                <div class="footer__descripcionesE">
+                    <div id="descripcionE" class="footer__descripcionE">
+                    </div>
+                    <div id="valorE" class="footer__valorE">
+                    </div>
+                    <div id="porcentajeE" class="footer__porcentajeE">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        
+        <script type="text/javascript" src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous" ></script>
+        <script type="text/javascript" src="js/prefixfree.min.js"></script>
+        <script type="text/javascript" src="js/dato.js"></script>
+        <script type="text/javascript" src="js/ingreso.js"></script>
+        <script type="text/javascript" src="js/egreso.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
